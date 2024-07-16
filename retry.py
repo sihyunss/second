@@ -10,8 +10,15 @@ b[3] = a.split() 오류나는 이유는 c언어가 아니기때문에 또,
 for i in range(3):
     print(i)
 """
+#2003 06 
+"""
+a= input("생년월일을 입력하시오 ")
+b[3] = a.split(' ')
+for i in b:
+    print(i)
+a = int(input("생년월일을 입력하시오"))#int형으로 바꾸고 싶을 때 string형이 아니라
+"""
 
-#a = int(input("생년월일을 입력하시오"))#int형으로 바꾸고 싶을 때 string형이 아니라
 #b = a.split()
 #for i in range(3):
 #    print(b[i])
@@ -37,6 +44,7 @@ print("합의 결과는",result)
 #for i in range(a):
 #    sum += value[i]
 #print("다 더한 값은 ",sum)
+"""
 head = "Python "
 tail = "fuckfuckfuckfuckfuㅎㅎㅎ"
 print(head+tail)
@@ -52,8 +60,10 @@ print(a)
 #현재온도를 츨정하여 만약 지금 온도가 20도면 값이 출력하고 종료하는
 i = 0
 while(True):
-    i++
-    if(i == 18 || i == 20){
+    i+=1
+    if(i == 18 and i == 20):
+        
         print("현재 온도는 %d입니다",i)
         break
-    }
+
+"""

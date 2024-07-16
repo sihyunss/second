@@ -7,7 +7,11 @@ day = "three"
 print("숫자 %d 영어로는 %s "%(number,day))
 print("숫자 {0} 영어로는 {1}".format(number,day))
 print("숫자 {a} 영어로는 {b}".format(a=10,b= "ten"))
-
+print("숫자 %d "%(3))
+print("숫자 {n}".format(n = "kim"))
+print("숫자 {1}".format(1,2))
+print("숫자는 {}    {}".format(1,2))
+print("숫자는 바보 {2} {1}".format("kim","si","hyun"))
 """
 a = int(input())//입력 받는 값
 b = int(input())//입력 받는 값
