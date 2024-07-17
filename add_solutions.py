@@ -12,8 +12,9 @@ def input_degree ():
 
 
 #사용자로 부터 받은 방정식을 알려주고, 두개의 함수를 더한 방정식을 출력해주는 함수
-def print_degree(coef,degree):
+def print_degree(commit,coef,degree):
     num = degree 
+    print(commit,end=" ") #몇번째 언어인지 표시하기 위한 print
     for i in coef:
         print("%dx^%d +"%(i,degree),end=' ')
         degree-=1
@@ -43,4 +44,6 @@ coef2,degree2 = input_degree()
 
 add_stack = []
 add_stack,add_degree=add_equation(coef1,degree1,coef2,degree2)
-print_degree(add_stack,add_degree)
+print_degree("1번째 함수 : ",coef1,degree1)
+print_degree("2번째 함수 : ",coef2,degree2)
+print_degree("더한 결과의 함수 : ",add_stack,add_degree)
