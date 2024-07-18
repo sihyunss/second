@@ -43,7 +43,10 @@ coef1,degree1 = input_degree()
 coef2,degree2 = input_degree()
 
 add_stack = []
+
+print_degree("1번째 방정식 : ",coef1,degree1) #계산 하기 전에 출력하기 위함 
+
 add_stack,add_degree=add_equation(coef1,degree1,coef2,degree2)
-print_degree("1번째 함수 : ",coef1,degree1)
-print_degree("2번째 함수 : ",coef2,degree2)
-print_degree("더한 결과의 함수 : ",add_stack,add_degree)
+
+print_degree("2번째 방정식 : ",coef2,degree2)
+print_degree("더한 결과의 방정식 : ",add_stack,add_degree)
