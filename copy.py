@@ -43,9 +43,35 @@ def postfix_statck(n):
 
 
 while True:
+    """if not location_mul[0] or location_div[0]:
+            if not location_mul[0] and location_div[0]:
+                break
+            elif not location_mul[0]:
+                postfix_statck(location_div[0])
+            elif not location_div[0]:
+                post_stack(location_mul[0])
     if location_mul[i] < location_div[i]:
         #pop으로 생각을 해보자고 !! 
         postfix_stack(location_mul[i])
     elif location_mul[i] > location_div[i]:
-        postfix_stack(location_div[i])
+        postfix_stack(location_div[i])"""
+    try :
+        mul = location_mul.pop(0)
+    except IndexError:
+        mul = 1024
+    try :
+        div = location_div.pop(0)
+    except IndexError:
+        div = 1024
+    if div == 1024 and mul == 1024 : #오류 숫자
+        break
+    
+    if mul<div :
+        post_stack(mul)
+        location_div.insert(div,0)
+    elif mul>div :
+        post_stack(div)
+        location_mul.insert(mul,0)
+    
+
 
