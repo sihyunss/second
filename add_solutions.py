@@ -1,4 +1,23 @@
 #데이터 구조에서 공부했던 방정식을 이용하여 사용자로 부터 받은 함수를 출력한 후, 함수끼리 더하는 프로그램 코드를 짤 예정
+""" return : 
+최대 차수를 입력하시오 5 
+차수의 앞 숫자들을 입력하시오
+1
+2
+3
+4
+5
+6
+최대 차수를 입력하시오 3
+차수의 앞 숫자들을 입력하시오
+1
+2
+3
+4
+1번째 방정식 :  1x^5 + 2x^4 + 3x^3 + 4x^2 + 5x^1 + 6 = 0
+2번째 방정식 :  1x^3 + 2x^2 + 3x^1 + 4 = 0
+더한 결과의 방정식 :  1x^5 + 2x^4 + 4x^3 + 6x^2 + 8x^1 + 10 = 0"""
+
 
 #사용자로부터 방정식을 받음
 def input_degree ():
@@ -44,7 +63,7 @@ coef2,degree2 = input_degree()
 
 add_stack = []
 
-print_degree("1번째 방정식 : ",coef1,degree1) #계산 하기 전에 출력하기 위함 
+print_degree("1번째 방정식 : ",coef1,degree1) #계산 하기 전에 출력하기 위함
 
 add_stack,add_degree=add_equation(coef1,degree1,coef2,degree2)
 

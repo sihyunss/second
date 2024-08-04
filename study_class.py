@@ -106,3 +106,22 @@ a.lastname = "김시현"
 print(a.lastname)
 b = Name()
 print(b.lastname)
+
+num = 1
+match num:
+    case 1:
+        print('1')
+    case 2:
+        print('2')
+
+    case 3:
+        print('3')
+
+match num:
+    case 1:
+        pass
+    case 2:
+        print('2')
+        print('1')
+    case 3:
+        print('3')
