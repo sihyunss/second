@@ -157,3 +157,94 @@ students = [
     Student('sally', 17, 'B'),
 ]
 result = sorted(students,key=attrgetter('age'))
+import pickle
+f = open("test.txt",'wb')
+data = {1:'python',2:'you nedd'}
+pickle.dump(data,f)
+f.close()
+import os
+print(os.environ)
+print(os.environ['PATH'])
+
+"""
+import time
+def long_task():
+    for i in range(5):
+        time.sleep(1)
+        print("working : %s \n"%i)
+
+print("Start")
+
+for i in range(5):
+    long_task()
+print("End")
+
+
+import time 
+import threading
+
+def long_task():
+    for i in range(5):
+        time.sleep(1)
+        print("working : %s \n"%i)
+print("Start ")
+
+threads  = []
+
+for i in range(5):
+    t = threading.Thread(target = long_task)
+    threads.append(t)
+
+for t in threads:
+    t.start()
+print("END")
+
+for t in threads:
+    t.join()
+print("End")
+"""
+
+import tempfile
+filename = tempfile.mkstemp()
+print(filename)
+
+def a():
+    return 1/0
+def b():
+    a()
+def main():
+    try:
+        b()
+    except:
+        print("오류가 발생하였습니다")
+
+main()
+
+import traceback
+def a():
+    return 1/0
+def b():
+    a()
+def main():
+    try:
+        b()
+    except:
+        print("오류가 발생하였습니다. ")
+        print(traceback.format_exc())
+
+main()
+
+"""{
+    "name": "홍길동",
+    "birth": "0525",
+    "age": 30
+}
+
+import json
+with open('myinfo.json') as f:
+    data = json.load(f)
+print(type(data))
+print(data)"""
+
+import webbrowser
+webbrowser.open_new('https://wikidocs.net/33')
