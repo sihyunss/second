@@ -34,7 +34,7 @@ from langchain.prompts.chat import (
     HumanMessagePromptTemplate,
 )
 
-api_key = 'AIzaSyCWsn9CaJ5SHiXdbpVFUS2aLattLFckHoE'
+api_key = 'your api key'
 os.environ["GOOGLE_API_KEY"] = api_key
 
 from google.colab import drive
